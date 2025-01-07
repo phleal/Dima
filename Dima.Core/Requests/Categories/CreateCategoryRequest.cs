@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Dima.Core.Requests.Categories
 {
-    public class CreateCategoryRequest : BaseRequest
+    public class CreateCategoryRequest : Request
     {
         [Required(ErrorMessage = "Título inválido")]
         [MaxLength(80, ErrorMessage = "O Título deve conter até 80 caracteres.")]

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dima.Core.Requests.Categories
 {
-    public class DeleteCategoryRequest : BaseRequest
+    public class DeleteCategoryRequest : Request
     {
         public long Id { get; set; }
     }

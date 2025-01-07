@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dima.Core.Requests
 {
-    public abstract class BaseRequest
+    public abstract class Request
     {
         public string UserId { get; set; } = string.Empty;
     }

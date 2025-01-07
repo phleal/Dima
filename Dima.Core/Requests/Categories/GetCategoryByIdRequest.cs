@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dima.Core.Requests.Categories
 {
-    public class GetCategoryByIdRequest : BaseRequest
+    public class GetCategoryByIdRequest : Request
     {
         public long Id { get; set; }
     }

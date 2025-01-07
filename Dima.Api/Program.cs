@@ -39,9 +39,3 @@ app.MapPost(
     .Produces<Response<Category>>();
 
 app.Run();
-
-
-
-
-
-
