@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dima.Core.Requests.Categories
+namespace Dima.Core.Requests.Transactions
 {
-    public class GetAllCategoriesRequest : PagedRequest
+    public class DeleteTransactionRequest : Request
     {
+        public long Id { get; set; }
     }
 }
