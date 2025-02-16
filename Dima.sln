@@ -3,17 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dima.Core", "Dima.Core\Dima.Core.csproj", "{0B8919E0-0F18-4147-A614-6CD84A684B19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dima.Core", "Dima.Core\Dima.Core.csproj", "{0B8919E0-0F18-4147-A614-6CD84A684B19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dima.Api", "Dima.Api\Dima.Api.csproj", "{FEE1281C-2208-4222-91B2-19966AEFDE77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dima.Api", "Dima.Api\Dima.Api.csproj", "{FEE1281C-2208-4222-91B2-19966AEFDE77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dima.Web", "Dima.web\Dima.Web.csproj", "{C175F300-4EEC-46A4-B7E9-4509E7939D9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0B8919E0-0F18-4147-A614-6CD84A684B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +23,15 @@ Global
 		{FEE1281C-2208-4222-91B2-19966AEFDE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEE1281C-2208-4222-91B2-19966AEFDE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEE1281C-2208-4222-91B2-19966AEFDE77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C175F300-4EEC-46A4-B7E9-4509E7939D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C175F300-4EEC-46A4-B7E9-4509E7939D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C175F300-4EEC-46A4-B7E9-4509E7939D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C175F300-4EEC-46A4-B7E9-4509E7939D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7675508-B9F5-45C9-B5ED-26253E3F7247}
 	EndGlobalSection
 EndGlobal
