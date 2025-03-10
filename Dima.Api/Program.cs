@@ -12,10 +12,11 @@ builder.AddServices();
 
 var app = builder.Build();
 
+app.UseCors(ApiConfiguration.CorsPolicyName);
+
 if (app.Environment.IsDevelopment())
     app.ConfigureDevEnvioroment();
 
-app.UseCors(ApiConfiguration.CorsPolicyName);
 app.UseSecurity();
 app.MapEndpoints();
 

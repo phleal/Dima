@@ -12,37 +12,27 @@
         <MudLayout>
             <MudAppBar>
                 Dima
-                <MudSpacer/>
-                <MudButton Href="/lancamentos/novo" 
-                           Variant="Variant.Text" StartIcon="@Icons.TwoTone.Add">
-                    NOVO LANÇAMENTO
-                </MudButton>
-                <MudSpacer/>
-                <MudText Typo="Typo.caption">
+                <MudSpacer />
+                <MudText>
                     @context.User.Identity?.Name
                 </MudText>
-                <MudSwitch
-                    Color="Color.Inherit"
-                    @bind-Value="@_isDarkMode"
-                    T="bool"
-                    Class="ma-4"
-                    ThumbIcon="@Icons.TwoTone.Lightbulb"/>
+                <MudSwitch @bind-Value="@_isDarkMode" />
             </MudAppBar>
             <MudMainContent>
-                <MudContainer Class="mt-4">
+                <MudContainer>
                     @Body
                 </MudContainer>
             </MudMainContent>
         </MudLayout>
     </Authorized>
     <NotAuthorized>
-        <LoginRedirect/>
+    <h1>VOCÊ NÃO ESTÁ CADASTRADO</h1>
+    @* <LoginRedirect/> *@
     </NotAuthorized>
 </AuthorizeView>
 
-@code {
 
-    private bool _isDrawerOpened = true;
+@code {
     private bool _isDarkMode = true;
     private MudThemeProvider _mudThemeProvider = null!;
 
@@ -62,5 +52,5 @@
         StateHasChanged();
         return Task.CompletedTask;
     }
-
 }
+
