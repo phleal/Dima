@@ -17,10 +17,12 @@ namespace Dima.Api.Endpoints.Identity
         {
 
             if (user.Identity is null || !user.Identity.IsAuthenticated)
-                return Task.FromResult<IResult>(Results.Unauthorized());
+                return Task.FromResult(Results.Unauthorized());
 
             var identity = (ClaimsIdentity)user.Identity;
-            var roles = identity.FindAll(identity.RoleClaimType).Select(x => new RoleClaim
+            var roles = identity
+                .FindAll(identity.RoleClaimType)
+                .Select(x => new RoleClaim
             {
                 Issuer = x.Issuer,
                 OriginalIssuer = x.OriginalIssuer,

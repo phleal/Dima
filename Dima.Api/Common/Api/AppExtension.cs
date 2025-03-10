@@ -13,8 +13,8 @@ namespace Dima.Api.Common.Api
 
         public static void UseSecurity(this WebApplication app)
         {
-            app.UseAuthorization();
             app.UseAuthentication();
+            app.UseAuthorization();
         }
     }
 }
