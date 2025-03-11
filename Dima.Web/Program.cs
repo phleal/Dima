@@ -32,8 +32,9 @@ builder.Services.AddHttpClient(Configuration.HttpClientName, opt =>
 
 
 builder.Services.AddTransient<IAccontHandler, AccountHandler>();
-//builder.Services.AddTransient<ITransactionHandler, TransactionHandler>();
-//builder.Services.AddTransient<ICategoryHandler, CategoryHandler>();
+builder.Services.AddTransient<ITransactionHandler, TransactionHandler>();
+builder.Services.AddTransient<ICategoryHandler, CategoryHandler>();
+
 //builder.Services.AddTransient<IReportHandler, ReportHandler>();
 //builder.Services.AddTransient<IOrderHandler, OrderHandler>();
 //builder.Services.AddTransient<IStripeHandler, StripeHandler>();
