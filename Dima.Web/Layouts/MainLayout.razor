@@ -1,11 +1,10 @@
 ﻿@inherits LayoutComponentBase
 
-<MudThemeProvider
-    @ref="_mudThemeProvider"
-    @bind-IsDarkMode="_isDarkMode"
-    Theme="Configuration.Theme"/>
-<MudSnackbarProvider/>
-<MudDialogProvider/>
+<MudThemeProvider @ref="_mudThemeProvider"
+                  @bind-IsDarkMode="_isDarkMode"
+                  Theme="Configuration.Theme" />
+<MudSnackbarProvider />
+<MudDialogProvider />
 
 <AuthorizeView>
     <Authorized>
@@ -16,6 +15,11 @@
                                Edge="Edge.Start"
                                OnClick="ToggleDrawer" />
                 Dima
+                <MudSpacer />
+                <MudButton Href="/lancamentos/novo"
+                           Variant="Variant.Text" StartIcon="@Icons.TwoTone.Add">
+                    NOVO LANÇAMENTO
+                </MudButton>
                 <MudSpacer />
                 <MudText Typo="Typo.caption">
                     @context.User.Identity?.Name
@@ -37,12 +41,12 @@
         </MudLayout>
     </Authorized>
     <NotAuthorized>
-        <LoginRedirect/>
+        <LoginRedirect />
     </NotAuthorized>
 </AuthorizeView>
 
-
 @code {
+
     private bool _isDrawerOpened = true;
     private bool _isDarkMode = true;
     private MudThemeProvider _mudThemeProvider = null!;
@@ -65,6 +69,6 @@
     }
 
     private void ToggleDrawer()
-       => _isDrawerOpened = !_isDrawerOpened;
-}
+        => _isDrawerOpened = !_isDrawerOpened;
 
+}
