@@ -9,16 +9,18 @@
 <AuthorizeView>
     <Authorized>
         <MudLayout>
-            <MudAppBar>
+            <MudAppBar Color="Color.Inherit">
                 <MudIconButton Icon="@Icons.Material.Filled.Menu"
                                Color="Color.Inherit"
                                Edge="Edge.Start"
                                OnClick="ToggleDrawer" />
-                Dima
-                <MudSpacer />
+                Menu
                 <MudButton Href="/lancamentos/novo"
-                           Variant="Variant.Text" StartIcon="@Icons.TwoTone.Add">
-                    NOVO LANÇAMENTO
+                           Variant="Variant.Text"
+                           StartIcon="@Icons.TwoTone.Add"
+                           Color="Color.Inherit"
+                           Style="margin-left: 16px; text-transform: none;">
+                Lançar
                 </MudButton>
                 <MudSpacer />
                 <MudText Typo="Typo.caption">
